@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Bandit environment
@@ -16,8 +15,8 @@ class LearningCurvePlot:
 
     def __init__(self,title=None):
         self.fig,self.ax = plt.subplots()
-        self.ax.set_xlabel('Time')
-        self.ax.set_ylabel('Reward')      
+        self.ax.set_xlabel('Timesteps (t)')
+        self.ax.set_ylabel('Average Reward')      
         if title is not None:
             self.ax.set_title(title)
         

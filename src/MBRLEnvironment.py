@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Model-based Reinforcement Learning environment
@@ -98,7 +97,7 @@ class WindyGridworld:
 
     def _initialize_plot(self):
         self.fig,self.ax = plt.subplots()#figsize=(self.width, self.height+1)) # Start a new figure
-        self.ax.set_xlim([0,self.width])
+        self.ax.set_xlim([0,10000])
         self.ax.set_ylim([0,self.height]) 
         self.ax.axes.xaxis.set_visible(False)
         self.ax.axes.yaxis.set_visible(False)
@@ -125,7 +124,7 @@ class WindyGridworld:
         self.agent_circle = Circle(self.location+0.5,0.3)
         self.ax.add_patch(self.agent_circle)
         
-    def _initialize_Q_labels(self):
+    def _initialize_Q_labels(self): 
         self.Q_labels = []
         for state in range(self.n_states):
             state_location = self.state_to_location(state)
