@@ -1,4 +1,4 @@
-# Introduction-to-Reinforcement-Learning-3
+# ITRL-3
 
 Assignment, ITRL
 
